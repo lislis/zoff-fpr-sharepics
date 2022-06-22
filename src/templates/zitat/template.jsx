@@ -69,7 +69,7 @@ export default () => {
             {state.data.logo.type === "Pfeil" && (
               <LogoArrow
                 width={170}
-                cglassName="mr-4 mb-4"
+                className="mr-4 mb-4"
                 fillColor={getSecondaryColor(state.data.background.color)}
                 strokeWidth="5"
               />
