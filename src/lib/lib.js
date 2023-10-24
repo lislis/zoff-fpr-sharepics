@@ -1,7 +1,7 @@
 import { cloneDeepWith, get, set } from "lodash";
 import { useEffect, useState } from "react";
 
-import { colors } from "../config/vars";
+import { colors, colorsUpdated, logosAndColors } from "../config/vars";
 import emojiRegex from "emoji-regex";
 import { saveAs } from "file-saver";
 import slugify from "react-slugify";
@@ -34,6 +34,23 @@ export const getColor = (color) => {
   return colors.filter((c) => c.label === color)[0].color;
 };
 
+export const getUpdatedColor = (color) => {
+  return colorsUpdated.filter((c) => c.label === color)[0].color;
+};
+
+export const getUpdatedSecondaryColor = (color) => {
+  return colorsUpdated.filter((c) => c.label === color)[0].secondaryColor;
+};
+
+export const getAvailableSecondaryColors = (color) => {
+  return colorsUpdated.filter((c) => c.label === color)[0].secondaryColor;
+};
+
+export const getColorsByLogo = (logo) => {
+  //debugger
+  return logosAndColors.filter((l) => l.logo === logo).map(x => x.label);
+};
+
 export const getSecondaryColor = (color) => {
   return colors.filter((c) => c.label === color)[0].secondaryColor;
 };
@@ -43,9 +60,39 @@ export const getPrimaryColor = (currentState) => {
     .value;
 };
 
+export const getColorFromLogoColor = (label) => {
+  return logosAndColors.filter((obj) => obj.label === label)[0]
+    .color;
+};
+
+export const getLogoFromLogoColor = (label) => {
+  if (label === 'none') return '';
+  return logosAndColors.filter((obj) => obj.label === label)[0]
+    .logo;
+};
+
+export const isLogoFprOrNone = (label) => {
+  if (label === 'none') return true;
+  return logosAndColors
+    .filter((obj) => obj.label === label)
+    .filter((obj) => obj.logo === 'FPR').length === 1 ? true : false;
+};
+
+export const setBgColorAsColor = (highlight, color) => {
+  return highlight === 'background' ? `style='color: ${color}'` : '';
+};
+
 export const updateProperty = ({ state, setState }, propertyPath, newValue) => {
   let prevState = cloneDeepWith(state);
   set(prevState, propertyPath, newValue);
+  setState(prevState);
+};
+
+export const updateMultipleProperties = ({ state, setState }, propteriesArray, newValuesArray) => {
+  let prevState = cloneDeepWith(state);
+  propteriesArray.forEach((v, k) => {
+    set(prevState, v, newValuesArray[k]);
+  });
   setState(prevState);
 };
 
