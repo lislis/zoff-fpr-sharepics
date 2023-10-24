@@ -419,3 +419,90 @@ export const templates = [
     thumbnailSrc: "../assets/images/templates/bild-farbe.jpg",
   },
 ];
+
+
+export const templatesFO = [
+  {
+    name: "Headline & Text (inhaltlich)",
+    link: "templates/inhalt-fo",
+    thumbnailSrc: "../assets/images/templatesFO/inhalt.png",
+  },
+  {
+    name: "Headline & Text (Service)",
+    link: "templates/service-fo",
+    thumbnailSrc: "../assets/images/templatesFO/service.png",
+  },
+  {
+    name: "Zitate oder Infos (optional mit Logo)",
+    link: "templates/zitat-fo",
+    thumbnailSrc: "../assets/images/templatesFO/zitat.png",
+  },
+];
+
+export const colorsFO = [
+  {
+    label: "rot",
+    name: "Rot",
+    color: "#FA3200",
+  },
+  {
+    label: "rothell",
+    name: "Rot hell",
+    color: "#FA9682",
+  },
+  {
+    label: "rosa",
+    name: "Rosa",
+    color: "#FF94AC",
+  },
+  {
+    label: "rosahell",
+    name: "Rosa hell",
+    color: "#FFC9D5",
+  },
+  {
+    label: "lila",
+    name: "Lila",
+    color: "#C896F0",
+  },
+  {
+    label: "lilahell",
+    name: "Lila hell",
+    color: "#E6C8FA",
+  },
+  {
+    label: "dunkelblauhell",
+    name: "Dunkelblau hell",
+    color: "#96B4D2",
+  },
+  {
+    label: "dunkelgruen",
+    name: "Dunkelgrün",
+    color: "#00A08C",
+  },
+  {
+    label: "dunkelgruenhell",
+    name: "Dunkelgrün hell",
+    color: "#82D2C8",
+  },
+  {
+    label: "gruen",
+    name: "Grün",
+    color: "#64E68C",
+  },
+  {
+    label: "gruenhell",
+    name: "Grün hell",
+    color: "#AAF0C8",
+  },
+  {
+    label: "gelbgruen",
+    name: "Gelbgrün",
+    color: "#E6DC00",
+  },
+  {
+    label: "gelbgruenhell",
+    name: "Gelbgrün hell",
+    color: "#F0F082",
+  },
+];
