@@ -12,17 +12,21 @@ export default () => {
   const [state, setState] = useContext(TemplateContext);
   return (
     <>
-      <div className="col-span-2">
-        <ColorSelector
-          label="Farbe wählen"
-          availableColors={state.data.background.availableColors}
-          propertyPath="data.background.color"
+
+      <div className="col-span-1">
+        <Input
+          label="Headline"
+          propertyPath="data.headline.content"
+          className="w-full"
         />
       </div>
       <div className="col-span-1">
+        <TextScaleRange propertyPath="data.headline.scale" optLabel="Headline" />
+      </div>
+      <div className="col-span-1">
         <Input
-          label="Dachzeile"
-          propertyPath="data.headline.content"
+          label="Subheadline"
+          propertyPath="data.subheadline.content"
           className="w-full"
         />
       </div>
@@ -35,19 +39,13 @@ export default () => {
         />
       </div>
       <div className="col-span-1">
-        <TextScaleRange propertyPath="data.body.scale" />
-      </div>
-      <div className="col-span-1">
-        <Input
-          label="Absender:in"
-          propertyPath="data.author.content"
-          className="w-full"
-        />
+        <TextScaleRange propertyPath="data.body.scale" optLabel="Text" />
       </div>
       <div className="col-span-2">
-        <Checkbox
-          propertyPath="data.logo.show"
-          label="Logo anzeigen"
+        <ColorSelector
+          label="BG Color"
+          availableColors={state.data.background.availableColors}
+          propertyPath="data.background.color"
         />
       </div>
       <div className="col-span-1 col-start-1">

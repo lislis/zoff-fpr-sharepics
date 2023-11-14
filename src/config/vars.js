@@ -437,6 +437,11 @@ export const templatesFO = [
     link: "templates/zitat-fo",
     thumbnailSrc: "../assets/images/templatesFO/zitat.png",
   },
+  {
+    name: "Map",
+    link: "templates/map",
+    thumbnailSrc: "../assets/images/templatesFO/map-alle.jpg",
+  },
 ];
 
 export const colorsFO = [
