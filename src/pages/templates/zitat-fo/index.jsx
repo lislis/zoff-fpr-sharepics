@@ -1,27 +1,29 @@
 import React, { useRef, useState } from "react";
 
-import Controls from "../../../templates/paritaet-zitat/controls";
-import Template from "../../../templates/paritaet-zitat/template";
+import Controls from "../../../templates/zitat-fo/controls";
+import Template from "../../../templates/zitat-fo/template";
 import TemplateContext from "../../../components/templateContext";
 import TemplateWrapper from "../../../components/templateWrapper";
+
+import { colorsFO } from "../../../config/vars";
 
 export default () => {
   const [state, setState] = useState({
     data: {
-      headline: { content: "Konferenz" },
+      roof: { content: "FrauenOrte im O-Ton" },
       body: {
         content: "Frauen in der Politik – von Parität keine Spur",
         scale: { value: 100, range: [80, 120] },
       },
+      subheadline: { content: "Subheadline optional" },
       logo: { show: true },
-      author: { content: "Euronews" },
+      alignment: {
+        current: 'start',
+        available: ['start', 'center']
+      },
       background: {
-        color: "pariPink",
-        availableColors: [
-          "pariPink",
-          "pariPetrol",
-          "pariPurple",
-        ],
+        color: "rosahell",
+        availableColors: colorsFO.map(x => x.label),
       },
     },
     ref: useRef(null),

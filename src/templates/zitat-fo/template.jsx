@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { getColor, getSecondaryColor } from "../../lib/lib";
+import { getFOColor } from "../../lib/lib";
 
-import BRGPartitaetBlack from "../../assets/svg/brg-paritaet-black";
-import BRGPartitaetWhite from "../../assets/svg/brg-paritaet-white";
+import FOLogo from "../../assets/svg/fo-logo";
 import TemplateContext from "../../components/templateContext";
 import TemplateLayout from "../../components/templateLayout";
 
@@ -13,50 +12,46 @@ export default () => {
       <div
         className="absolute top-0 left-0 w-full h-full z-10"
         style={{
-          background: getColor(state.data.background.color),
+          background: getFOColor(state.data.background.color),
         }}
       />
 
       <div
         className="absolute z-20 w-full h-full top-0 left-0 flex flex-col p-4"
-        style={{ paddingTop: "200px" }}
-      >
+        style={{
+          justifyContent: state.data.alignment.current,
+          paddingBottom: `${state.data.logo.show ? 60 : 0}px` }}>
         <div
-          className="leading-none underline font-avenir font-bold text-lg"
+          className="leading-none font-montserrat font-bold text-lg"
           style={{
-            color: getSecondaryColor(state.data.background.color),
+            fontSize: `40px`,
           }}
           dangerouslySetInnerHTML={{
-            __html: state.data.headline.content.replace(/\n/gi, "<br/>"),
+            __html: state.data.roof.content.replace(/\n/gi, "<br/>"),
           }}
         />
         <div
-          className="leading-tight font-avenir font-bold break-words mt-2"
+          className="leading-tight font-redaction font-bold break-words mt-2"
           style={{
             fontSize: `${state.data.body.scale.value}px`,
-            color: getSecondaryColor(state.data.background.color),
           }}
           dangerouslySetInnerHTML={{
             __html: state.data.body.content.replace(/\n/gi, "<br/>"),
           }}
         />
         <div
-          className="leading-normal font-avenir italic text-lg mt-3"
+          className="leading-none font-montserrat font-bold text-lg mt-2"
           style={{
-            color: getSecondaryColor(state.data.background.color),
+            fontSize: `40px`,
           }}
           dangerouslySetInnerHTML={{
-            __html: state.data.author.content.replace(/\n/gi, "<br/>"),
+            __html: state.data.subheadline.content.replace(/\n/gi, "<br/>"),
           }}
         />
 
         {state.data.logo.show === true && (
-          <div className="absolute bottom-0 right-0 z-30 mr-4 mb-4">
-            {getSecondaryColor(state.data.background.color) === "#fff" ? (
-              <BRGPartitaetWhite width="464" />
-            ) : (
-              <BRGPartitaetBlack width="464" />
-            )}
+          <div className="absolute bottom-0 left-0 z-30 ml-4 mb-4">
+            <FOLogo width="330" />
           </div>
         )}
       </div>
