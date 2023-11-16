@@ -521,4 +521,48 @@ export const foWomen = [
     label: 'keine',
     value: '-keine'
   },
+  {
+    label: 'Agnes Bircke',
+    value: 'agnes-bircke-v-d-duba'
+  },
+  {
+    label: 'Anna-Liese Schwieger',
+    value: 'anna-liese-schwieger'
+  },
+  {
+    label: 'Anne-Marie Baral',
+    value: 'anne-marie-baral'
+  },
+  {
+    label: 'Annemirl Bauer',
+    value: 'annemirl-bauer'
+  },
+  {
+    label: 'Benedicta v Loewendal',
+    value: 'benedicta-v-loewendal'
+  },
+  {
+    label: 'Caroline Motte Fouque',
+    value: 'caroline-motte-fouque'
+  },
+  {
+    label: 'Caroline v Labes',
+    value: 'caroline-v-labes'
+  },
+  {
+    label: 'Christiane v Rochow',
+    value: 'christiane-v-rochow'
+  },
+  {
+    label: 'Clara Grunwald',
+    value: 'clara-grunwald'
+  },
+  {
+    label: 'Clara Hoffbauer',
+    value: 'clara-hoffbauer'
+  },
+  {
+    label: 'Clara Zetkin',
+    value: 'clara-zetkin'
+  },
 ];
