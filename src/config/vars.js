@@ -655,7 +655,7 @@ export const foWomen = [
   },
   {
     label: 'Clara von Simson',
-    value: ''
+    value: 'clara-simson'
   },
   {
     label: 'Justine Siegemundin',

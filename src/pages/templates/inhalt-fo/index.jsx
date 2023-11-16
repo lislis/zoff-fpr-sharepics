@@ -10,7 +10,7 @@ import { colorsFO } from "../../../config/vars";
 export default () => {
   const [state, setState] = useState({
     data: {
-      headline: { content: "Frieda Winckelmann",
+      headline: { content: "Frida Winckelmann",
                   scale: { value: 145, range: [110, 170]}
                 },
       subheadline: { content: "Frauenort in Birkenwerder" },
