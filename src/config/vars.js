@@ -511,3 +511,14 @@ export const colorsFO = [
     color: "#F0F082",
   },
 ];
+
+export const foWomen = [
+  {
+    label: 'alle',
+    value: '-alle',
+  },
+  {
+    label: 'keine',
+    value: '-keine'
+  },
+];
