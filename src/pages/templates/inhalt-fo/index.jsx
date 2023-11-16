@@ -19,8 +19,6 @@ export default () => {
         content: "Journalistin, Forscherin, Aktivistin. Minna Cauer wollte gleiches Stimm-recht für alle sowie Gleichberechtigung in Beruf und Politik. Sie war eine der bedeutendsten Akteurinnen der radi-kalen bürgerlichen Frauenbewegung im deutschen Kaiserreich.",
         scale: { value: 50, range: [40, 70] },
       },
-      logo: { show: true },
-      author: { content: "auth" },
       background: {
         color: "dunkelgruen",
         availableColors: colorsFO.map(x => x.label),

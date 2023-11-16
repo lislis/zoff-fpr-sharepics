@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { getColor, getSecondaryColor } from "../../lib/lib";
+import { getFOColor } from "../../lib/lib";
 
-import BRGPartitaetBlack from "../../assets/svg/brg-paritaet-black";
-import BRGPartitaetWhite from "../../assets/svg/brg-paritaet-white";
+import MapLocation from "../../assets/svg/map-location";
 import TemplateContext from "../../components/templateContext";
 import TemplateLayout from "../../components/templateLayout";
 
@@ -13,52 +12,51 @@ export default () => {
       <div
         className="absolute top-0 left-0 w-full h-full z-10"
         style={{
-          background: getColor(state.data.background.color),
+          background: getFOColor(state.data.background.color),
         }}
       />
 
       <div
-        className="absolute z-20 w-full h-full top-0 left-0 flex flex-col p-4"
-        style={{ paddingTop: "200px" }}
+        className="absolute z-20 w-full h-full top-0 left-0 flex flex-col p-3"
+        //style={{ paddingTop: "20px" }}
       >
         <div
-          className="leading-none underline font-avenir font-bold text-lg"
+          className="leading-none font-redaction font-bold text-lg"
           style={{
-            color: getSecondaryColor(state.data.background.color),
+            fontSize: `${state.data.headline.scale.value}px`,
+//            color: getSecondaryColor(state.data.background.color),
           }}
           dangerouslySetInnerHTML={{
             __html: state.data.headline.content.replace(/\n/gi, "<br/>"),
           }}
         />
-        <div
-          className="leading-tight font-avenir font-bold break-words mt-2"
-          style={{
-            fontSize: `${state.data.body.scale.value}px`,
-            color: getSecondaryColor(state.data.background.color),
-          }}
-          dangerouslySetInnerHTML={{
-            __html: state.data.body.content.replace(/\n/gi, "<br/>"),
-          }}
-        />
-        <div
-          className="leading-normal font-avenir italic text-lg mt-3"
-          style={{
-            color: getSecondaryColor(state.data.background.color),
-          }}
-          dangerouslySetInnerHTML={{
-            __html: state.data.author.content.replace(/\n/gi, "<br/>"),
-          }}
-        />
 
-        {state.data.logo.show === true && (
-          <div className="absolute bottom-0 right-0 z-30 mr-4 mb-4">
-            {getSecondaryColor(state.data.background.color) === "#fff" ? (
-              <BRGPartitaetWhite width="464" />
-            ) : (
-              <BRGPartitaetBlack width="464" />
-            )}
+        <div
+          className="leading-none underline font-montserrat font-bold text-lg flex items-baseline mt-2">
+          {state.data.mapLocation.show === true && (
+            <MapLocation width="12" />
+          )}<span class="mx-1" style={{fontSize: '36px'}}>{state.data.subheadline.content.replace(/\n/gi, "<br/>")}</span>
+        </div>
+        <div
+          className="absolute inset-x-0 bottom-0 p-3 mt-2"
+        >
+          <div
+            className="leading-tight font-montserrat break-words"
+            style={{
+              fontSize: `${state.data.body.scale.value}px`,
+            }}
+            dangerouslySetInnerHTML={{
+              __html: state.data.body.content.replace(/\n/gi, "<br/>"),
+            }} />
+          <div
+            className="leading-tight font-montserrat break-words mt-2"
+            style={{
+              fontSize: `30px`,
+            }}
+            dangerouslySetInnerHTML={{
+              __html: state.data.additional.content.replace(/\n/gi, "<br/>"),
+            }} />
           </div>
-        )}
       </div>
     </TemplateLayout>
   );

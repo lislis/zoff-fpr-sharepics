@@ -58,7 +58,8 @@
 @font-face {
   font-family: "Montserrat";
   font-weight: 400;
-  src: url(/assets/fonts/montserrat/montserrat-variablefont_wght-webfont.woff);
+  src: url(/assets/fonts/montserrat/montserrat-regular-webfont.woff);
+  //src: url(/assets/fonts/montserrat/montserrat-variablefont_wght-webfont.woff);
 }
 
 @font-face {

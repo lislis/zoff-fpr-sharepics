@@ -1,27 +1,30 @@
 import React, { useRef, useState } from "react";
 
-import Controls from "../../../templates/paritaet-zitat/controls";
-import Template from "../../../templates/paritaet-zitat/template";
+import Controls from "../../../templates/service-fo/controls";
+import Template from "../../../templates/service-fo/template";
 import TemplateContext from "../../../components/templateContext";
 import TemplateWrapper from "../../../components/templateWrapper";
+
+import { colorsFO } from "../../../config/vars";
 
 export default () => {
   const [state, setState] = useState({
     data: {
-      headline: { content: "Konferenz" },
+      headline: { content: "Frieda Winckelmann",
+                  scale: { value: 145, range: [90, 170]}
+                },
+      subheadline: { content: "Frauenort in Birkenwerder" },
+      mapLocation: { show: true },
       body: {
-        content: "Frauen in der Politik – von Parität keine Spur",
-        scale: { value: 100, range: [80, 120] },
+        content: "Journalistin, Forscherin, Aktivistin. Minna Cauer wollte gleiches Stimm-recht für alle sowie Gleichberechtigung in Beruf und Politik. Sie war eine der bedeutendsten Akteurinnen der radi-kalen bürgerlichen Frauenbewegung im deutschen Kaiserreich.",
+        scale: { value: 50, range: [40, 70] },
       },
-      logo: { show: true },
-      author: { content: "Euronews" },
+      additional: {
+        content: "Um Anmeldung wird gebeten"
+      },
       background: {
-        color: "pariPink",
-        availableColors: [
-          "pariPink",
-          "pariPetrol",
-          "pariPurple",
-        ],
+        color: "gruenhell",
+        availableColors: colorsFO.map(x => x.label),
       },
     },
     ref: useRef(null),
