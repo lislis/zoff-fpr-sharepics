@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import Checkbox from "../../components/inputs/checkbox";
-import ColorSelector from "../../components/inputs/colorSelector";
+import ColorSelector from "../../components/inputs/colorsFOSelector";
 import Input from "../../components/inputs/input";
 import TemplateContext from "../../components/templateContext";
 import TextScaleRange from "../../components/inputs/textScaleRange";
@@ -14,10 +14,11 @@ export default () => {
     <>
 
       <div className="col-span-1">
-        <Input
+        <Textarea
           label="Headline"
           propertyPath="data.headline.content"
           className="w-full"
+          rows={1}
         />
       </div>
       <div className="col-span-1">

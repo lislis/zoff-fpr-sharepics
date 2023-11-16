@@ -35,7 +35,7 @@ export default () => {
           className="leading-none underline font-montserrat font-bold text-lg flex items-baseline mt-2">
           {state.data.mapLocation.show === true && (
             <MapLocation width="12" />
-          )}<span class="mx-1" style={{fontSize: '36px'}}>{state.data.subheadline.content.replace(/\n/gi, "<br/>")}</span>
+          )}<span style={{fontSize: '36px', marginLeft: '16px'}}>{state.data.subheadline.content.replace(/\n/gi, "<br/>")}</span>
         </div>
         <div
           className="absolute inset-x-0 bottom-0 p-3 mt-2"

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import Checkbox from "../../components/inputs/checkbox";
-import ColorSelector from "../../components/inputs/colorSelector";
+import ColorSelector from "../../components/inputs/colorsFOSelector";
 import Input from "../../components/inputs/input";
 import TemplateContext from "../../components/templateContext";
 import TextScaleRange from "../../components/inputs/textScaleRange";

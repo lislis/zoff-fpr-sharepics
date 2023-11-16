@@ -12,8 +12,8 @@ export default () => {
     data: {
       roof: { content: "FrauenOrte im O-Ton" },
       body: {
-        content: "Frauen in der Politik – von Parität keine Spur",
-        scale: { value: 100, range: [80, 120] },
+        content: "Seit drei Jahr-hunderten - Frauen* in der Politik",
+        scale: { value: 120, range: [80, 150] },
       },
       subheadline: { content: "Subheadline optional" },
       logo: { show: true },

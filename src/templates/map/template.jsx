@@ -17,8 +17,8 @@ export default () => {
         style={{
           backgroundImage: `url(/assets/images/frauenorte/map-${state.data.map.current}.png`,
           height: "100%",
-          backgroundSize: 'cover',
-          backgroundPosition: 'bottom'
+          backgroundPosition: '39% 44%',
+          backgroundSize: '152%'
         }}
       />
 

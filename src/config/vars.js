@@ -522,15 +522,7 @@ export const foWomen = [
     value: '-keine'
   },
   {
-    label: 'Agnes Bircke',
-    value: 'agnes-bircke-v-d-duba'
-  },
-  {
-    label: 'Anna-Liese Schwieger',
-    value: 'anna-liese-schwieger'
-  },
-  {
-    label: 'Anne-Marie Baral',
+    label: 'Anne Marie Baral',
     value: 'anne-marie-baral'
   },
   {
@@ -538,31 +530,183 @@ export const foWomen = [
     value: 'annemirl-bauer'
   },
   {
-    label: 'Benedicta v Loewendal',
-    value: 'benedicta-v-loewendal'
+    label: 'Sophie Juliane Friederike Gräfin Dönhoff',
+    value: 'doenhof'
   },
   {
-    label: 'Caroline Motte Fouque',
-    value: 'caroline-motte-fouque'
+    label: 'Agnes Bircke von der Duba',
+    value: 'agnes-bircke-v-d-duba'
   },
   {
-    label: 'Caroline v Labes',
-    value: 'caroline-v-labes'
+    label: 'Minna Cauer',
+    value: 'minna-cauer'
   },
   {
-    label: 'Christiane v Rochow',
-    value: 'christiane-v-rochow'
+    label: 'Gertrud Feiertag',
+    value: 'gertrud-feiertag'
+  },
+  {
+    label: 'Elise Fontane',
+    value: 'elise-fontane'
+  },
+  {
+    label: 'Marie Goslich',
+    value: 'marie-goslich'
+  },
+  {
+    label: 'Frieda Glücksmann',
+    value: 'frida-gluecksmann'
   },
   {
     label: 'Clara Grunwald',
     value: 'clara-grunwald'
   },
   {
+    label: 'Dorothea von Holstein-Glücksburg',
+    value: 'dorothea-v-gluecksburg'
+  },
+  {
+    label: 'Regine Hildebrandt',
+    value: 'regine-hildebrandt'
+  },
+  {
     label: 'Clara Hoffbauer',
     value: 'clara-hoffbauer'
   },
   {
+    label: 'Emma Ihrer',
+    value: 'emma-ihrer'
+  },
+  {
+    label: 'Johanna Just',
+    value: 'johanna-just'
+  },
+  {
+    label: 'Maria Margaretha Kirch',
+    value: 'maria-margaretha-kirch'
+  },
+  {
+    label: 'Ulrike von Kleist',
+    value: 'ulrike-v-kleist'
+  },
+  {
+    label: 'Erna Kretschmann',
+    value: 'erna-kretschmann'
+  },
+  {
+    label: 'Dr. Helga Kroening',
+    value: 'helga-kroenig'
+  },
+  {
+    label: 'Gisela Opitz',
+    value: 'gisela-opitz'
+  },
+  {
+    label: 'Euphemia von Oels / Herzogin Offka',
+    value: 'euphemia-v-oels'
+  },
+  {
+    label: 'Johanna Louise Pirl',
+    value: 'luise-pirl'
+  },
+  {
+    label: 'Caroline Marie Elisabeth von Labes',
+    value: 'caroline-v-labes'
+  },
+  {
+    label: 'Elisabeth Jenny genannt Ella Lettre',
+    value: 'ella-lettre'
+  },
+  {
+    label: 'Benedicta Margaretha Freifrau von Löwendal',
+    value: 'benedicta-v-loewendal'
+  },
+  {
+    label: 'Caroline de la Motte Fouqué',
+    value: 'caroline-motte-fouque'
+  },
+  {
+    label: 'Dr. Ruth Moeller',
+    value: 'ruth-moeller'
+  },
+  {
+    label: 'Käthe Pietschker',
+    value: 'kaethe-pietschker'
+  },
+  {
+    label: 'Emma Pufahl',
+    value: 'emma-pufahl'
+  },
+  {
+    label: 'Christiane Louise von Rochow',
+    value: 'christiane-v-rochow'
+  },
+  {
+    label: 'Hedwig Rösemann',
+    value: 'hedwig-roesemann'
+  },
+  {
+    label: 'Gertrud von Saldern',
+    value: 'gertrud-v-saldern'
+  },
+  {
+    label: 'Anna-Liese Schwieger',
+    value: 'anna-liese-schwieger'
+  },
+  {
+    label: 'Clara von Simson',
+    value: ''
+  },
+  {
+    label: 'Justine Siegemundin',
+    value: 'justine-siegimundin'
+  },
+  {
+    label: 'Eva Strittmatter',
+    value: 'eva-strittmatter'
+  },
+  {
+    label: 'Erna Taege-Röhnisch',
+    value: 'erna-taege-roehnisch'
+  },
+  {
+    label: 'Elise Taube',
+    value: 'elise-taube'
+  },
+  {
+    label: 'Else Weil',
+    value: 'else-weil'
+  },
+  {
+    label: 'Frida Winckelmann',
+    value: 'frida-winckelmann'
+  },
+  {
+    label: 'Emilie Winkelmann',
+    value: 'emilie-winckelmann'
+  },
+  {
+    label: 'Mina Witkojc',
+    value: 'mina-witkojc'
+  },
+  {
     label: 'Clara Zetkin',
     value: 'clara-zetkin'
+  },
+  {
+    label: 'Die ersten weiblichen Stadt...',
+    value: 'cottbusser-stadtverordnete'
+  },
+  {
+    label: 'Frauen von Friedland',
+    value: 'frauen-v-friedland'
+  },
+  {
+    label: 'Diakonissen',
+    value: 'diakonissen'
+  },
+  {
+    label: 'Zisterzienserinnenkloster Marienwerder',
+    value: 'zisterzienserinnen'
   },
 ];

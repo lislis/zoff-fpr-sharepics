@@ -20,7 +20,7 @@ export default () => {
         className="absolute z-20 w-full h-full top-0 left-0 flex flex-col p-4"
         style={{
           justifyContent: state.data.alignment.current,
-          paddingBottom: `${state.data.logo.show ? 60 : 0}px` }}>
+          paddingBottom: `${state.data.logo.show ? 230 : 80}px` }}>
         <div
           className="leading-none font-montserrat font-bold text-lg"
           style={{
@@ -31,9 +31,10 @@ export default () => {
           }}
         />
         <div
-          className="leading-tight font-redaction font-bold break-words mt-2"
+          className="font-redaction font-bold break-words mt-3"
           style={{
             fontSize: `${state.data.body.scale.value}px`,
+            lineHeight: '1.1'
           }}
           dangerouslySetInnerHTML={{
             __html: state.data.body.content.replace(/\n/gi, "<br/>"),
@@ -51,7 +52,7 @@ export default () => {
 
         {state.data.logo.show === true && (
           <div className="absolute bottom-0 left-0 z-30 ml-4 mb-4">
-            <FOLogo width="330" />
+            <FOLogo width="380" />
           </div>
         )}
       </div>

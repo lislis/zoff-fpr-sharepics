@@ -11,7 +11,7 @@ export default () => {
   const [state, setState] = useState({
     data: {
       headline: { content: "Frieda Winckelmann",
-                  scale: { value: 145, range: [90, 170]}
+                  scale: { value: 145, range: [110, 170]}
                 },
       subheadline: { content: "Frauenort in Birkenwerder" },
       mapLocation: { show: true },
