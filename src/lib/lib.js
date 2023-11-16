@@ -1,7 +1,7 @@
 import { cloneDeepWith, get, set } from "lodash";
 import { useEffect, useState } from "react";
 
-import { colors, colorsUpdated, colorsFO } from "../config/vars";
+import { colors, colorsUpdated, colorsFO, logosAndColors } from "../config/vars";
 import emojiRegex from "emoji-regex";
 import { saveAs } from "file-saver";
 import slugify from "react-slugify";
@@ -51,10 +51,10 @@ export const getFOColor = (color) => {
 };
 
 
-// export const getColorsByLogo = (logo) => {
-//   //debugger
-//   return logosAndColors.filter((l) => l.logo === logo).map(x => x.label);
-// };
+export const getColorsByLogo = (logo) => {
+  //debugger
+  return logosAndColors.filter((l) => l.logo === logo).map(x => x.label);
+};
 
 export const getSecondaryColor = (color) => {
   return colors.filter((c) => c.label === color)[0].secondaryColor;
@@ -65,23 +65,23 @@ export const getPrimaryColor = (currentState) => {
     .value;
 };
 
-// export const getColorFromLogoColor = (label) => {
-//   return logosAndColors.filter((obj) => obj.label === label)[0]
-//     .color;
-// };
+export const getColorFromLogoColor = (label) => {
+  return logosAndColors.filter((obj) => obj.label === label)[0]
+    .color;
+};
 
-// export const getLogoFromLogoColor = (label) => {
-//   if (label === 'none') return '';
-//   return logosAndColors.filter((obj) => obj.label === label)[0]
-//     .logo;
-// };
+export const getLogoFromLogoColor = (label) => {
+  if (label === 'none') return '';
+  return logosAndColors.filter((obj) => obj.label === label)[0]
+    .logo;
+};
 
-// export const isLogoFprOrNone = (label) => {
-//   if (label === 'none') return true;
-//   return logosAndColors
-//     .filter((obj) => obj.label === label)
-//     .filter((obj) => obj.logo === 'FPR').length === 1 ? true : false;
-// };
+export const isLogoFprOrNone = (label) => {
+  if (label === 'none') return true;
+  return logosAndColors
+    .filter((obj) => obj.label === label)
+    .filter((obj) => obj.logo === 'FPR').length === 1 ? true : false;
+};
 
 export const setBgColorAsColor = (highlight, color) => {
   return highlight === 'background' ? `style='color: ${color}'` : '';

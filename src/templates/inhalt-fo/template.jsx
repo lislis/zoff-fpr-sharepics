@@ -21,7 +21,7 @@ export default () => {
         //style={{ paddingTop: "20px" }}
       >
         <div
-          className="leading-none font-avenir font-bold text-lg"
+          className="leading-none font-redaction font-bold text-lg"
           style={{
             fontSize: `${state.data.headline.scale.value}px`,
 //            color: getSecondaryColor(state.data.background.color),
@@ -32,13 +32,13 @@ export default () => {
         />
 
         <div
-          className="leading-none underline font-avenir font-bold text-lg flex items-baseline mt-2">
+          className="leading-none underline font-montserrat font-bold text-lg flex items-baseline mt-2">
           {state.data.mapLocation.show === true && (
             <MapLocation width="12" />
-          )}<span class="mx-1">{state.data.subheadline.content.replace(/\n/gi, "<br/>")}</span>
+          )}<span class="mx-1" style={{fontSize: '36px'}}>{state.data.subheadline.content.replace(/\n/gi, "<br/>")}</span>
         </div>
         <div
-          className="absolute inset-x-0 bottom-0 p-3 leading-tight font-avenir font-bold break-words mt-2"
+          className="absolute inset-x-0 bottom-0 p-3 leading-tight font-redaction font-bold break-words mt-2"
           style={{
             fontSize: `${state.data.body.scale.value}px`,
   //          color: getSecondaryColor(state.data.background.color),

@@ -11,18 +11,18 @@ export default () => {
   const [state, setState] = useState({
     data: {
       headline: { content: "Frieda Winckelmann",
-                  scale: { value: 100, range: [80, 120]}
+                  scale: { value: 145, range: [90, 170]}
                 },
       subheadline: { content: "Frauenort in Birkenwerder" },
       mapLocation: { show: true },
       body: {
         content: "Journalistin, Forscherin, Aktivistin. Minna Cauer wollte gleiches Stimm-recht für alle sowie Gleichberechtigung in Beruf und Politik. Sie war eine der bedeutendsten Akteurinnen der radi-kalen bürgerlichen Frauenbewegung im deutschen Kaiserreich.",
-        scale: { value: 60, range: [50, 80] },
+        scale: { value: 50, range: [40, 70] },
       },
       logo: { show: true },
       author: { content: "auth" },
       background: {
-        color: "rot",
+        color: "dunkelgruen",
         availableColors: colorsFO.map(x => x.label),
       },
     },

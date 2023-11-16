@@ -30,6 +30,9 @@ export default () => {
           className="w-full"
         />
       </div>
+      <div className="col-span-1">
+        <Checkbox propertyPath="data.mapLocation.show" label="Map Icon" />
+      </div>
       <div className="col-span-1 col-start-1">
         <Textarea
           label="Text"
