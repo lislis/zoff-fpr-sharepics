@@ -419,3 +419,294 @@ export const templates = [
     thumbnailSrc: "../assets/images/templates/bild-farbe.jpg",
   },
 ];
+
+
+export const templatesFO = [
+  {
+    name: "Headline & Text (inhaltlich)",
+    link: "templates/inhalt-fo",
+    thumbnailSrc: "../assets/images/templatesFO/inhalt.png",
+  },
+  {
+    name: "Headline & Text (Service)",
+    link: "templates/service-fo",
+    thumbnailSrc: "../assets/images/templatesFO/service.png",
+  },
+  {
+    name: "Zitate oder Infos (optional mit Logo)",
+    link: "templates/zitat-fo",
+    thumbnailSrc: "../assets/images/templatesFO/zitat.png",
+  },
+  {
+    name: "Map",
+    link: "templates/map",
+    thumbnailSrc: "../assets/images/templatesFO/map-alle.jpg",
+  },
+];
+
+export const colorsFO = [
+  {
+    label: "rot",
+    name: "Rot",
+    color: "#FA3200",
+  },
+  {
+    label: "rothell",
+    name: "Rot hell",
+    color: "#FA9682",
+  },
+  {
+    label: "rosa",
+    name: "Rosa",
+    color: "#FF94AC",
+  },
+  {
+    label: "rosahell",
+    name: "Rosa hell",
+    color: "#FFC9D5",
+  },
+  {
+    label: "lila",
+    name: "Lila",
+    color: "#C896F0",
+  },
+  {
+    label: "lilahell",
+    name: "Lila hell",
+    color: "#E6C8FA",
+  },
+  {
+    label: "dunkelblauhell",
+    name: "Dunkelblau hell",
+    color: "#96B4D2",
+  },
+  {
+    label: "dunkelgruen",
+    name: "Dunkelgrün",
+    color: "#00A08C",
+  },
+  {
+    label: "dunkelgruenhell",
+    name: "Dunkelgrün hell",
+    color: "#82D2C8",
+  },
+  {
+    label: "gruen",
+    name: "Grün",
+    color: "#64E68C",
+  },
+  {
+    label: "gruenhell",
+    name: "Grün hell",
+    color: "#AAF0C8",
+  },
+  {
+    label: "gelbgruen",
+    name: "Gelbgrün",
+    color: "#E6DC00",
+  },
+  {
+    label: "gelbgruenhell",
+    name: "Gelbgrün hell",
+    color: "#F0F082",
+  },
+];
+
+export const foWomen = [
+  {
+    label: 'alle',
+    value: '-alle',
+  },
+  {
+    label: 'keine',
+    value: '-keine'
+  },
+  {
+    label: 'Anne Marie Baral',
+    value: 'anne-marie-baral'
+  },
+  {
+    label: 'Annemirl Bauer',
+    value: 'annemirl-bauer'
+  },
+  {
+    label: 'Sophie Juliane Friederike Gräfin Dönhoff',
+    value: 'doenhof'
+  },
+  {
+    label: 'Agnes Bircke von der Duba',
+    value: 'agnes-bircke-v-d-duba'
+  },
+  {
+    label: 'Minna Cauer',
+    value: 'minna-cauer'
+  },
+  {
+    label: 'Gertrud Feiertag',
+    value: 'gertrud-feiertag'
+  },
+  {
+    label: 'Elise Fontane',
+    value: 'elise-fontane'
+  },
+  {
+    label: 'Marie Goslich',
+    value: 'marie-goslich'
+  },
+  {
+    label: 'Frieda Glücksmann',
+    value: 'frida-gluecksmann'
+  },
+  {
+    label: 'Clara Grunwald',
+    value: 'clara-grunwald'
+  },
+  {
+    label: 'Dorothea von Holstein-Glücksburg',
+    value: 'dorothea-v-gluecksburg'
+  },
+  {
+    label: 'Regine Hildebrandt',
+    value: 'regine-hildebrandt'
+  },
+  {
+    label: 'Clara Hoffbauer',
+    value: 'clara-hoffbauer'
+  },
+  {
+    label: 'Emma Ihrer',
+    value: 'emma-ihrer'
+  },
+  {
+    label: 'Johanna Just',
+    value: 'johanna-just'
+  },
+  {
+    label: 'Maria Margaretha Kirch',
+    value: 'maria-margaretha-kirch'
+  },
+  {
+    label: 'Ulrike von Kleist',
+    value: 'ulrike-v-kleist'
+  },
+  {
+    label: 'Erna Kretschmann',
+    value: 'erna-kretschmann'
+  },
+  {
+    label: 'Dr. Helga Kroening',
+    value: 'helga-kroenig'
+  },
+  {
+    label: 'Gisela Opitz',
+    value: 'gisela-opitz'
+  },
+  {
+    label: 'Euphemia von Oels / Herzogin Offka',
+    value: 'euphemia-v-oels'
+  },
+  {
+    label: 'Johanna Louise Pirl',
+    value: 'luise-pirl'
+  },
+  {
+    label: 'Caroline Marie Elisabeth von Labes',
+    value: 'caroline-v-labes'
+  },
+  {
+    label: 'Elisabeth Jenny genannt Ella Lettre',
+    value: 'ella-lettre'
+  },
+  {
+    label: 'Benedicta Margaretha Freifrau von Löwendal',
+    value: 'benedicta-v-loewendal'
+  },
+  {
+    label: 'Caroline de la Motte Fouqué',
+    value: 'caroline-motte-fouque'
+  },
+  {
+    label: 'Dr. Ruth Moeller',
+    value: 'ruth-moeller'
+  },
+  {
+    label: 'Käthe Pietschker',
+    value: 'kaethe-pietschker'
+  },
+  {
+    label: 'Emma Pufahl',
+    value: 'emma-pufahl'
+  },
+  {
+    label: 'Christiane Louise von Rochow',
+    value: 'christiane-v-rochow'
+  },
+  {
+    label: 'Hedwig Rösemann',
+    value: 'hedwig-roesemann'
+  },
+  {
+    label: 'Gertrud von Saldern',
+    value: 'gertrud-v-saldern'
+  },
+  {
+    label: 'Anna-Liese Schwieger',
+    value: 'anna-liese-schwieger'
+  },
+  {
+    label: 'Clara von Simson',
+    value: 'clara-simson'
+  },
+  {
+    label: 'Justine Siegemundin',
+    value: 'justine-siegimundin'
+  },
+  {
+    label: 'Eva Strittmatter',
+    value: 'eva-strittmatter'
+  },
+  {
+    label: 'Erna Taege-Röhnisch',
+    value: 'erna-taege-roehnisch'
+  },
+  {
+    label: 'Elise Taube',
+    value: 'elise-taube'
+  },
+  {
+    label: 'Else Weil',
+    value: 'else-weil'
+  },
+  {
+    label: 'Frida Winckelmann',
+    value: 'frida-winckelmann'
+  },
+  {
+    label: 'Emilie Winkelmann',
+    value: 'emilie-winckelmann'
+  },
+  {
+    label: 'Mina Witkojc',
+    value: 'mina-witkojc'
+  },
+  {
+    label: 'Clara Zetkin',
+    value: 'clara-zetkin'
+  },
+  {
+    label: 'Die ersten weiblichen Stadt...',
+    value: 'cottbusser-stadtverordnete'
+  },
+  {
+    label: 'Frauen von Friedland',
+    value: 'frauen-v-friedland'
+  },
+  {
+    label: 'Diakonissen',
+    value: 'diakonissen'
+  },
+  {
+    label: 'Zisterzienserinnenkloster Marienwerder',
+    value: 'zisterzienserinnen'
+  },
+];

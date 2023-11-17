@@ -41,3 +41,43 @@
   font-weight: 700;
   src: url(/assets/fonts/baskerville/baskervilleBold.woff);
 }
+
+
+@font-face {
+  font-family: "Redaction";
+  font-weight: 400;
+  src: url(/assets/fonts/redaction/Redaction-Regular-zoff.woff2);
+}
+
+@font-face {
+  font-family: "Redaction";
+  font-weight: 700;
+  src: url(/assets/fonts/redaction/Redaction-Bold-zoff.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: url(/assets/fonts/montserrat/montserrat-v25-latin-500.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url(/assets/fonts/montserrat/montserrat-v25-latin-600.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url(/assets/fonts/montserrat/montserrat-v25-latin-600.woff2);
+}
+
+
+.font-redaction {
+  font-family: 'Redaction';
+}
+
+.font-montserrat {
+  font-family: 'Montserrat';
+}
